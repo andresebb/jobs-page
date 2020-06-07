@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+header{
+    width: 80%;
+    margin: 0 auto;
+    height: 60px;
+    border: 1px solid teal;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header__image{
+    height: 90%;
+    width: 80px;
+    border: 1px solid red;
+}
+
+.header__image img{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 0 8px;
+}
+
+.header__login{
+    height: 100%;
+    display: flex;
+    border: 1px solid red;
+}
+
+.header__login__container{
+    display: flex;
+    align-items: center;
+    margin-right: 120px;
+}
+
+.header__login__text{
+}
+
+.header__login__image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid peru;
+}
+
+
+.header__registered{
+    align-items: center;
+    display: inline-grid;
+    text-align: center;
+}
+
+
+
+
+
+.header__registered__button{
+    display: flex;
+}
