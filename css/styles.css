@@ -1,5 +1,7 @@
 body{
-    margin: 0;
+    margin: 0 ;
+    background: #ECEFF1;
+    overflow-x: hidden;
 }
 
 p{
@@ -7,13 +9,14 @@ p{
 }
 
 header{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     height: 60px;
     border: 1px solid teal;
-    padding: 10px;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .header__image{
@@ -28,6 +31,7 @@ header{
 }
 
 nav{
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,6 +54,7 @@ a{
     height: 100%;
     display: flex;
     border: 1px solid red;
+    margin-left: 360px;
 }
 
 .header__login__container{
@@ -81,4 +86,30 @@ a{
 
 .header__registered__button{
     display: flex;
+}
+
+.hero__background{
+    height: 550px;
+    background: purple;
+    position: absolute;
+    top: 0;
+    right: -41px;
+    left: 0;
+    transform: rotate(-3deg) translate(-20px, -68px);
+}
+
+.hero{
+    position: relative;
+}
+
+.hero__title{
+    width: 320px;
+    margin: 0 auto;
+}
+
+.hero__images{
+    width: 80%;
+    height: 300px;
+    border: 2px solid royalblue;
+    margin: 0 auto;
 }
