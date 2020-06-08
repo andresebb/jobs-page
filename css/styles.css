@@ -2,7 +2,7 @@ body{
     margin: 0 ;
     background: #ECEFF1;
     overflow-x: hidden;
-}
+    font-family: 'Karla', sans-serif;}
 
 p{
     margin: 0;
@@ -112,4 +112,39 @@ a{
     height: 300px;
     border: 2px solid royalblue;
     margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero__images__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__images img{
+    height: 70px;
+    width: 70px;
+    margin: 0 10px;
+}
+
+.skill{
+    width: 100px;
+    height: 100px;
+}
+
+.skill img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.skill-first img{
+    width: 30px;
+    height: 30px;
+}
+
+.skill-last img{
+    width: 30px;
+    height: 30px;
 }
