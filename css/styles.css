@@ -1,8 +1,52 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "icomoon";
+  src: url("../assets/logos/fonts/icomoon.eot?rfzeel");
+  src: url("../assets/logos/fonts/icomoon.eot?rfzeel#iefix") format("embedded-opentype"), url("../assets/logos/fonts/icomoon.ttf?rfzeel") format("truetype"), url("../assets/logos/fonts/icomoon.woff?rfzeel") format("woff"), url("../assets/logos/fonts/icomoon.svg?rfzeel#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-instagram:before {
+  content: "";
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-github:before {
+  content: "";
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Karla", sans-serif;
-  /* 2BC48A */
+  background: #eceff1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 header {
@@ -24,5 +68,51 @@ header ul li a {
   text-decoration: none;
 }
 header ul li:hover {
-  border-bottom: 4px solid teal;
+  border-bottom: 4px solid #2bc48a;
+}
+
+.hero {
+  text-align: center;
+  margin: 0 auto;
+  width: 500px;
+  margin-bottom: 30px;
+}
+.hero__title h1 {
+  font-size: 26px;
+}
+.hero__button {
+  padding: 10px 40px;
+  border-radius: 100px;
+  margin: 20px;
+  font-size: 20px;
+  border: none;
+  background: #2bc48a;
+  color: white;
+}
+.hero__button__empleador {
+  margin-right: 0;
+}
+.hero__button__empleado {
+  margin-left: 0;
+}
+.hero__login a {
+  color: #737f87;
+}
+.hero__categories {
+  height: 200px;
+  background: #2bc48a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__categories__images {
+  width: 800px;
+  display: flex;
+  overflow: hidden;
+}
+.hero__categories__images img {
+  fill: red;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
 }
