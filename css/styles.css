@@ -142,7 +142,6 @@ header ul li:hover {
 .hero__categories__images {
   width: 1100px;
   display: flex;
-  overflow: hidden;
   background-repeat: repeat-x;
 }
 .hero__categories__images img {
@@ -153,4 +152,32 @@ header ul li:hover {
 .hero__categories__images .elemento-first {
   transition: 1s;
   background: red;
+}
+.hero__categories__images.active {
+  animation-name: moveRight;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  transition: 2s;
+}
+.hero__categories__images.noactive {
+  animation-name: moveLeft;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
