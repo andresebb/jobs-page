@@ -140,6 +140,9 @@ header{
         justify-content: center;
         position: relative;
 
+        &__arrow:active{
+            transform: scale(.9);
+        }
 
         &__arrow{
             height: 100%;
@@ -158,10 +161,6 @@ header{
                 box-shadow: 7px 0px 10px 2px rgba(0, 0, 0, .3);
             }
 
-            &--left:active{
-                background: red;
-            }
-
             &--right{
                 position: absolute;
                 top: 0;
@@ -170,9 +169,6 @@ header{
                 box-shadow: -7px 0px 10px 2px rgba(0, 0, 0, .3);
             }
 
-            &--right:active{
-                background: red;
-            }
             img{
                 height: 50px;
                 width: 50px;
@@ -184,6 +180,7 @@ header{
         &__images{
             width: 1100px;
             display: flex;
+            overflow: hidden;
             background-repeat: repeat-x;
 
 
@@ -196,7 +193,7 @@ header{
             
             .elemento-first{
                 transition: 1s;
-                background: red;
+                margin-left: 0;
             }
         }
         

@@ -4,12 +4,12 @@ const $firstElement = document.getElementById("elemento-first");
 const $lastElement = document.getElementById("elemento-last");
 const $categorias = document.getElementById("hero__categories__images");
 
-$arrowRight.addEventListener("click", (event) => {
-    $categorias.classList.add("active");
-    $categorias.classList.remove("noactive");
-})
+var numerito = "-800px";
 
-$arrowLeft.addEventListener("click", (evento) => {
-    $categorias.classList.toggle("noactive");
-})
+$arrowRight.addEventListener("click", (event)=> {
+    $firstElement.style.marginLeft = "-400px"
+});
 
+$arrowLeft.addEventListener("click", () => {
+        $firstElement.style.marginLeft = "0px";
+});

@@ -106,6 +106,9 @@ header ul li:hover {
   justify-content: center;
   position: relative;
 }
+.hero__categories__arrow:active {
+  transform: scale(0.9);
+}
 .hero__categories__arrow {
   height: 100%;
   background: #2bc48a;
@@ -122,18 +125,12 @@ header ul li:hover {
   justify-content: flex-end;
   box-shadow: 7px 0px 10px 2px rgba(0, 0, 0, 0.3);
 }
-.hero__categories__arrow--left:active {
-  background: red;
-}
 .hero__categories__arrow--right {
   position: absolute;
   top: 0;
   right: -8%;
   justify-content: flex-start;
   box-shadow: -7px 0px 10px 2px rgba(0, 0, 0, 0.3);
-}
-.hero__categories__arrow--right:active {
-  background: red;
 }
 .hero__categories__arrow img {
   height: 50px;
@@ -142,6 +139,7 @@ header ul li:hover {
 .hero__categories__images {
   width: 1100px;
   display: flex;
+  overflow: hidden;
   background-repeat: repeat-x;
 }
 .hero__categories__images img {
@@ -151,7 +149,7 @@ header ul li:hover {
 }
 .hero__categories__images .elemento-first {
   transition: 1s;
-  background: red;
+  margin-left: 0;
 }
 .hero__categories__images.active {
   animation-name: moveRight;
