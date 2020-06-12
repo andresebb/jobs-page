@@ -1,0 +1,40 @@
+.header__icons{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    .icon{
+        font-size: 24px;
+        font-weight: bold;
+        color: $color-principal;
+        margin: 0 15px;
+        cursor: pointer;
+    }
+}
+
+header{
+    padding: 20px;
+
+
+    ul{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        
+        li{
+            list-style: none;
+            margin: 20px;
+            padding: 10px;
+            a{
+                color: $color-anclas;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+        
+        li:hover{
+            border-bottom: 2px solid $color-principal;
+        }
+    }
+
+}

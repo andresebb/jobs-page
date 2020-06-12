@@ -11,5 +11,5 @@ $arrowRight.addEventListener("click", (event)=> {
 });
 
 $arrowLeft.addEventListener("click", () => {
-        $firstElement.style.marginLeft = "0px";
+        $firstElement.style.marginLeft = "10px";
 });

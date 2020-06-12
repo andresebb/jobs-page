@@ -49,6 +49,19 @@ a {
   color: black;
 }
 
+.header__icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+.header__icons .icon {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2bc48a;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
 header {
   padding: 20px;
 }
@@ -61,14 +74,15 @@ header ul {
 header ul li {
   list-style: none;
   margin: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 header ul li a {
-  color: black;
+  color: #847c7ce6;
   text-decoration: none;
+  font-weight: bold;
 }
 header ul li:hover {
-  border-bottom: 4px solid #2bc48a;
+  border-bottom: 2px solid #2bc48a;
 }
 
 .hero {
@@ -80,7 +94,26 @@ header ul li:hover {
 .hero__title h1 {
   font-size: 26px;
 }
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hero__buttons p {
+  background: white;
+  border-radius: 50%;
+  height: 43px;
+  width: 43px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 4px;
+  z-index: 10;
+}
 .hero__button {
+  outline: none;
   padding: 10px 40px;
   border-radius: 100px;
   margin: 20px;
@@ -88,12 +121,17 @@ header ul li:hover {
   border: none;
   background: #2bc48a;
   color: white;
+  cursor: pointer;
 }
 .hero__button__empleador {
-  margin-right: 0;
+  margin-right: -11px;
+  background: #00bdff;
 }
 .hero__button__empleado {
-  margin-left: 0;
+  margin-left: -11px;
+}
+.hero__button:active {
+  transform: scale(0.9);
 }
 .hero__login a {
   color: #737f87;
@@ -151,13 +189,17 @@ header ul li:hover {
 }
 .hero__categories__images a p {
   margin: 0;
-  color: #1F845B;
+  color: #206a4c;
   text-align: center;
   font-weight: bold;
 }
+.hero__categories__images a:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
 .hero__categories__images .elemento-first {
   transition: 1s;
-  margin-left: 0;
+  margin-left: 10px;
 }
 .hero__categories__images.active {
   animation-name: moveRight;
@@ -169,21 +211,4 @@ header ul li:hover {
   animation-name: moveLeft;
   animation-duration: 3s;
   animation-fill-mode: forwards;
-}
-
-@keyframes moveRight {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-300px);
-  }
-}
-@keyframes moveLeft {
-  0% {
-    transform: translateX(-300px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
 }
