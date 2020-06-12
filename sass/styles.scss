@@ -183,13 +183,21 @@ header{
             overflow: hidden;
             background-repeat: repeat-x;
 
-
-            
-            img{
-                width: 80px;
-                height: 80px;
+            a{
                 margin: 10px;
+                img{
+                    width: 80px;
+                    height: 80px;
+                }
+
+                p{
+                    margin: 0;
+                    color: #1F845B;
+                    text-align: center;
+                    font-weight: bold;
+                }
             }
+            
             
             .elemento-first{
                 transition: 1s;

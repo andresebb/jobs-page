@@ -142,10 +142,18 @@ header ul li:hover {
   overflow: hidden;
   background-repeat: repeat-x;
 }
-.hero__categories__images img {
+.hero__categories__images a {
+  margin: 10px;
+}
+.hero__categories__images a img {
   width: 80px;
   height: 80px;
-  margin: 10px;
+}
+.hero__categories__images a p {
+  margin: 0;
+  color: #1F845B;
+  text-align: center;
+  font-weight: bold;
 }
 .hero__categories__images .elemento-first {
   transition: 1s;
