@@ -2,6 +2,7 @@ $color-principal: #2bc48a;
 $color-secundario: #00bdff;
 $color-background: #eceff1;
 $color-anclas: #847c7ce6;
+$color-parrafp: #242424;
 
 
 /////////////////////////////SOCIAL-MEDIA*
@@ -52,12 +53,15 @@ $color-anclas: #847c7ce6;
 /////////////////////////////SOCIAL-MEDIA*
 
 
+.wrapper{
+    background: $color-background;
+}
     
 body{
     margin: 0 ;
     overflow-x: hidden;
     font-family: 'Karla', sans-serif;
-    background: $color-background;
+    
 }
 
 a{

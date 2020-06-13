@@ -6,7 +6,7 @@
 
     &__title{
         h1{
-            font-size: 26px;
+            font-size: 30px;
         }
     }
 
@@ -14,6 +14,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        
         position: relative;
         
         p{
@@ -30,6 +31,7 @@
         }
     }
     
+  
     &__button{
         outline: none;
         padding: 10px 40px;
@@ -40,6 +42,8 @@
         background: $color-principal;
         color: white;
         cursor: pointer;
+        box-shadow: inset 0 -.2em rgba(0,0,0, .2);
+
 
 
         &__empleador{
