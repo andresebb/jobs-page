@@ -212,3 +212,24 @@ header ul li:hover {
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
+
+.introduction__title {
+  margin: 0 auto;
+  max-width: 462px;
+  text-align: center;
+}
+.introduction__container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.introduction__box {
+  height: 475px;
+  width: 300px;
+  background: teal;
+  margin: 50px 40px;
+}
+.introduction__box img {
+  width: 100%;
+  height: 220px;
+}
