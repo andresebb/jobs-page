@@ -7,6 +7,7 @@
     &__title{
         h1{
             font-size: 30px;
+            color: white;
         }
     }
 
@@ -118,6 +119,7 @@
             display: flex;
             overflow: hidden;
             background-repeat: repeat-x;
+            align-items: center;
 
             a{
                 margin: 10px;

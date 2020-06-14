@@ -37,14 +37,11 @@
   content: "";
 }
 
-.wrapper {
-  background: #eceff1;
-}
-
 body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Karla", sans-serif;
+  background: #001e31;
 }
 
 a {
@@ -80,7 +77,7 @@ header ul li {
   padding: 10px;
 }
 header ul li a {
-  color: #847c7ce6;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
@@ -96,6 +93,7 @@ header ul li:hover {
 }
 .hero__title h1 {
   font-size: 30px;
+  color: white;
 }
 .hero__buttons {
   display: flex;
@@ -183,6 +181,7 @@ header ul li:hover {
   display: flex;
   overflow: hidden;
   background-repeat: repeat-x;
+  align-items: center;
 }
 .hero__categories__images a {
   margin: 10px;
@@ -217,9 +216,6 @@ header ul li:hover {
   animation-fill-mode: forwards;
 }
 
-.introduction {
-  background: white;
-}
 .introduction__title {
   margin: 46px auto;
   max-width: 462px;
@@ -228,6 +224,10 @@ header ul li:hover {
 .introduction__title h1 {
   font-size: 24px;
   font-weight: 400;
+  color: #2bc48a;
+}
+.introduction__title p {
+  color: white;
 }
 .introduction__container {
   flex-wrap: wrap;
@@ -241,8 +241,8 @@ header ul li:hover {
   margin: 30px 40px;
   padding: 15px;
   background: white;
-  border-top: 4px solid #206a4c;
-  border-bottom: 4px solid #206a4c;
+  border-top: 4px solid #00bdff;
+  border-bottom: 4px solid #00bdff;
   border-radius: 18px;
   transition: 0.5s;
 }

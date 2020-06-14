@@ -3,7 +3,7 @@ $color-secundario: #00bdff;
 $color-background: #eceff1;
 $color-anclas: #847c7ce6;
 $color-parrafp: #242424;
-
+$color-gusta: #001e31;
 
 /////////////////////////////SOCIAL-MEDIA*
 
@@ -54,13 +54,13 @@ $color-parrafp: #242424;
 
 
 .wrapper{
-    background: $color-background;
 }
     
 body{
     margin: 0 ;
     overflow-x: hidden;
     font-family: 'Karla', sans-serif;
+    background: $color-gusta;
     
 }
 
