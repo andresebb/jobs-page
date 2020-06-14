@@ -85,11 +85,54 @@ header ul li:hover {
   border-bottom: 2px solid #2bc48a;
 }
 
+.hero-prueba {
+  position: relative;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave {
+  width: 2402px;
+  height: 400px;
+  left: -1000px;
+  background: url(../../waves.webp) center bottom no-repeat;
+  position: absolute;
+  animation: waves 5s ease-in-out infinite alternate;
+}
+
+.wave.a {
+  background-position: 0 -854px;
+}
+
+.wave.b {
+  animation-delay: 0.6s;
+  background-position: 0 -427px;
+}
+
+.wave.c {
+  animation-delay: 1.2s;
+  background-position: 0 0;
+}
+
+@keyframes waves {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translate(-60px, 15px);
+  }
+  100% {
+    transform: translate(120px, -30px);
+  }
+}
 .hero {
+  position: absolute;
   text-align: center;
   margin: 0 auto;
   width: 500px;
-  margin-bottom: 30px;
+  margin-bottom: 120px;
 }
 .hero__title h1 {
   font-size: 30px;
